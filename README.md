@@ -16,13 +16,3 @@
 
 ## Flow Chart
 ![FlowChart](./img/tmp_architecture.png)
-
-
-
-
-
-
-## Fine  
-![image](/etc/picture1.png)
-![image](/etc/picture2.jpeg)
-![image](/etc/picture3.jpeg)
