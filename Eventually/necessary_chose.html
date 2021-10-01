@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>시간표 추천</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			const add_textbox = () => {
+				const box = document.getElementById("box");
+				const newP = document.createElement('p');
+				newP.innerHTML = "<select><option>알고리즘및실습<option>컴퓨터 구조<option>이산수학및프로그래밍</select>";
+				box.appendChild(newP);
+			}
+			const remove = (obj) => {
+				document.getElementById('box').removeChild(obj.parentNode);
+			}
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>시간표 추천 프로그램</h1>
+				<p>전필 및 전선</p>
+			</header>
+
+		<!-- Signup Form -->
+			<form id="necessary_chose" method="post" action="#">
+				<input type="button" value="추가"  onclick="add_textbox()">
+				<div id="box">
+					<br>
+					<select><option>문제해결및실습:C++<option>고급C프로그래밍<option>JAVA프로그래밍및실습</select>
+					<br>
+				</div>
+				<script>
+					document.write("<br>");
+				</script>
+				<button type="button" onclick="location.href='flavor.html'" style="float:right;">제출</button>
+			</form>
+
+		<!-- Footer -->
+			<!-- <footer id="footer">
+				<ul class="icons">
+					<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+					<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+				</ul>
+				<ul class="copyright">
+					<li>&copy; Untitled.</li><li>Credits: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</footer>
+
+		Scripts
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

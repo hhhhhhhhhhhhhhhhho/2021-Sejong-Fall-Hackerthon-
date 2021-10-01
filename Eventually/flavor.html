@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+<!--
+	Eventually by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>시간표 추천</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script type="text/javascript">
+			const add_textbox = () => {
+				const box = document.getElementById("box");
+				const newP = document.createElement('p');
+				newP.innerHTML = "<select>논쟁을 좋아하는<option>문학적인<option>실용적인<option>안온한<option>진취적인<option>탐구적인<option>활동적인<option>호기심이 생기는</select>";
+				box.appendChild(newP);
+			}
+			const remove = (obj) => {
+				document.getElementById('box').removeChild(obj.parentNode);
+			}
+		</script>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1>시간표 추천 프로그램</h1>
+				<p>취향 선택</p>
+			</header>
+
+		<!-- Signup Form -->
+			<form id="necessary_chose" method="post" action="#">
+				<input type="button" value="추가"  onclick="add_textbox()">
+				<div id="box">
+					<br>
+					<select>논쟁을 좋아하는<option>문학적인<option>실용적인<option>안온한<option>진취적인<option>탐구적인<option>활동적인<option>호기심이 생기는</select>
+					<br>
+				</div>
+				<script>
+					document.write("<br>");
+				</script>
+				<button type="button" onclick="location.href='time_table.html'" style="float:right;">제출</button>
+			</form>
+
+
+
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
